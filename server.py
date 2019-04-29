@@ -1,16 +1,15 @@
 import argparse
 import logging
-from collections import defaultdict, OrderedDict
 from typing import List
 
 import requests
 from flask import Flask, request, Response, jsonify, send_file, send_from_directory
 from flask_cors import CORS
 from gevent.pywsgi import WSGIServer
-from opencc import OpenCC
 from nlp2 import *
-from gensim import models
 import numpy as np
+
+logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -61,8 +60,8 @@ def make_app(field_names: List[str] = None,
 
     @app.route('/TAP/patent/KCM/W2V', methods=['GET'])
     def predict() -> Response:
-        result = requests.get('http://localhost:'+os.environ["USPTO"], params=request.args)
-        return result
+        result = requests.get(os.environ["USPTO"] + "/TAP/patent/KCM/W2V", params=request.args)
+        return result.text
 
     @app.route('/<path:path>')
     def static_proxy(path: str) -> Response:  # pylint: disable=unused-variable

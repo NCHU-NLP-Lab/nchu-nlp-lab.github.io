@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: path.resolve(__dirname, './websrc/index.js'),
     output: {
         path: path.resolve(__dirname, './output'),
         filename: 'bundle.js'
@@ -12,7 +11,7 @@ module.exports = {
             {
                 test   : /\.(js|jsx)$/,
                 loaders: ['babel-loader'],
-                include: path.join(__dirname, 'websrc')
+                include: path.join(__dirname, 'src')
             }, {
                 test: /\.(scss|sass|css)$/i,
                 use: [
@@ -30,7 +29,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./websrc/index.html",
+            template: "./src/index.html",
             filename: "./index.html"
         })
     ]

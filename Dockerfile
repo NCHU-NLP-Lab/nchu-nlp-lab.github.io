@@ -9,6 +9,6 @@ COPY requirements.txt /usr/src/app/
 RUN pip install -r /usr/src/app/requirements.txt
 
 # Copy source project
-COPY .. /usr/src/app/
+COPY . /usr/src/app/
 
-CMD python -m server --port 8000 --static-dir ./output
+CMD python -m server --port 80 --static-dir ./output
