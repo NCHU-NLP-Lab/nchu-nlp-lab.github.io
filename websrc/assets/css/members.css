@@ -1,0 +1,15 @@
+.cropcircle{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background: #eee no-repeat center;
+    background-size: cover;
+}
+
+
+#avatar1{
+    background-image: url(http://web.nchu.edu.tw/~yfan/img/author-pic.jpg);
+}
+#avatar2{
+    background-image: url(http://web.nchu.edu.tw/~yfan/img/author-pic.jpg);
+}
