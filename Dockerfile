@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:stretch
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -11,4 +11,4 @@ RUN pip install -r /usr/src/app/requirements.txt
 # Copy source project
 COPY . /usr/src/app/
 
-CMD python -m server --port 80 --static-dir ./output
+CMD python -m server --port 80 --static-dir ./src
