@@ -1668,7 +1668,7 @@
 
 	h2 {
 		font-size: 1.75em;
-		font-weight: 100;
+		font-weight: 300;
 	}
 
 	h3 {
@@ -1680,7 +1680,7 @@
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 1.1em;
 	}
 
 	h6 {
@@ -1823,6 +1823,10 @@
 			}
 
 			section.wrapper.style1 h4, article.wrapper.style1 h3 {
+				color: #FFF;
+			}
+
+			section.wrapper.style1 h5, article.wrapper.style1 h3 {
 				color: #FFF;
 			}
 
