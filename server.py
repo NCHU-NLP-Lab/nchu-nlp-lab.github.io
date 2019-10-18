@@ -63,6 +63,11 @@ def make_app(field_names: List[str] = None,
         result = requests.get(os.environ["USPTO"] + "/TAP/patent/KCM/W2V", params=request.args)
         return result.text
 
+    @app.route('/TAP/IPC', methods=['GET'])
+    def predict() -> Response:
+        result = requests.get(os.environ["IPC"] + "/TAP/IPC", params=request.args)
+        return result.text
+
     @app.route('/<path:path>')
     def static_proxy(path: str) -> Response:  # pylint: disable=unused-variable
         if static_dir is not None:
