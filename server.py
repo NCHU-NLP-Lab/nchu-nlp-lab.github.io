@@ -59,12 +59,12 @@ def make_app(field_names: List[str] = None,
             return send_file(os.path.join(static_dir, 'index.html'))
 
     @app.route('/TAP/patent/KCM/W2V', methods=['GET'])
-    def predict() -> Response:
+    def w2v() -> Response:
         result = requests.get(os.environ["USPTO"] + "/TAP/patent/KCM/W2V", params=request.args)
         return result.text
 
     @app.route('/TAP/IPC', methods=['GET'])
-    def predict() -> Response:
+    def ipc() -> Response:
         result = requests.get(os.environ["IPC"] + "/TAP/IPC", params=request.args)
         return result.text
 
