@@ -7,19 +7,68 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
-
+#team{
+	font-size: 20px;
+}
 .try-out-container{
-	padding: 20px 0px 20px 0px;
+	color: #f7f7f7;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 60vw;
+	margin: 0 auto;
 }
 
 .try-out{
+	background: linear-gradient(135deg, rgba(85,239,203,1) 0%,rgba(30,87,153,1) 0%,rgba(85,239,203,1) 0%,rgba(91,202,255,1) 100%);
+	flex: 1 1 auto;
+	margin: 10px;
+	margin-top: 40px;
+	padding: 20px;
+	border: 2px solid #f7f7f7;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	overflow:hidden;
+	transition: .3s;
+}
+.try-out:after {
+	position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+	background: #f7f7f7;
+}
+.try-out:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 0px 3px #f7f7f7;
+}
+.try-out:hover:after {
+	width: 0%;
+}
+
+
+
+/* .try-out-container{
+	padding: 20px 0px 20px 0px;
+} */
+
+/* .try-out{
 	margin-top: 10px;
 	height: 120px;
 	background-color: #28a745;
-	border-radius: 5px;
+	border-radius: 5px; */
 	/* box-shadow: 3px 3px #ccc; */
-	border: 1px #282828 solid;
-}
+	/* border: 1px #282828 solid;
+} */
 
 /* .try-out:hover{
 	border: 2px #282828 solid;
@@ -1800,6 +1849,18 @@
 		margin: 0 auto;
 	}
 
+	.image_box {
+	    width: 150px;
+	    height: 150px;
+	    max-width:  100%;
+	    display:  table;
+	    background-color:  #f1f1f1;
+	    }
+	    .request-img{
+	    display:table-cell;
+	    vertical-align:middle;
+	    text-align:center;
+    }
 		@media screen and (max-width: 1280px) {
 
 			.inner {
@@ -1849,7 +1910,7 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #6186b3;
+			background: #44546a;
 			color: #fff;
 		}
 
@@ -1870,6 +1931,31 @@
 			}
 
 			section.wrapper.style1 h5, article.wrapper.style1 h3 {
+				color: #FFF;
+			}
+
+		section.wrapper.style2, article.wrapper.style2 {
+			background: #FFF;
+			color: #fff;
+		}
+
+			section.wrapper.style2 header h2, article.wrapper.style2 header h2 {
+				color: #fff;
+			}
+
+			section.wrapper.style2 header p, article.wrapper.style2 header p {
+				color: #bacee6;
+			}
+
+			section.wrapper.style2 h3, article.wrapper.style2 h3 {
+				color: #FFF;
+			}
+
+			section.wrapper.style2 h4, article.wrapper.style2 h3 {
+				color: #FFF;
+			}
+
+			section.wrapper.style2 h5, article.wrapper.style2 h3 {
 				color: #FFF;
 			}
 
@@ -2986,7 +3072,7 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: linear-gradient(to bottom, #20374a9e 0%, #01387d5c 100%), url(../../images/question.jpg);
+		background-image: linear-gradient(to bottom, #20374a9e 0%, #01387d5c 100%), url(../../querator_images/question.jpg);
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
@@ -2998,6 +3084,15 @@
 		#banner h1 {
 			font-size: 4.0em;
 			font-weight: 500;
+			color: #fff;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		#banner h2 {
+			font-size: 2.0em;
+			font-weight: 600;
 			color: #fff;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
