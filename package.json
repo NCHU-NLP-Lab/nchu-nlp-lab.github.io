@@ -1,30 +1,45 @@
 {
-  "name": "udiclab",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "udic-website",
+  "version": "2.0.0",
+  "description": "The main website of UDIC lab",
+  "private": true,
   "scripts": {
     "dev": "webpack --mode development --config webpack.config.js --watch",
     "build": "webpack --mode production --config webpack.config.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "UDIC Lab",
+  "contributors": [
+    {
+      "name": "Eric Lam (@voidful)"
+    },
+    {
+      "name": "Harry Chan"
+    },
+    {
+      "name": "Tomy Hsieh (@tomy0000000)"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NCHU-NLU-Lab/Website"
+  },
   "dependencies": {
-    "@babel/core": "^7.4.4",
-    "babel-loader": "^8.0.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1"
+    "@babel/polyfill": "^7.11.5",
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "save-dev": "^2.0.0",
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
     "css-loader": "^1.0.1",
-    "file-loader": "^2.0.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.26.1",
-    "webpack-cli": "^3.3.1",
-    "webpack-node-externals": "^1.7.2"
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
