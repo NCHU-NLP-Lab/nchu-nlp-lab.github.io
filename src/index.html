@@ -27,19 +27,33 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header id="header">
+    <nav class="bg-transparent px-8">
+      <div class="-mb-px flex justify-center">
+        <a class="nav-item active" href="#"> UDIC Lab </a>
+        <a class="nav-item" href="#"> 現任成員 </a>
+        <a class="nav-item" href="#"> Service </a>
+        <a class="nav-item" href="#"> Publications </a>
+        <a class="nav-item" href="#"> 歷屆成員 </a>
+        <a class="nav-item" href="#"> 在職班 </a>
+      </div>
+    </nav>
+    <!-- <div id="header">
       <div class="inner">
         <a href="." class="logo">UDIC Lab</a>
       </div>
-    </header>
+    </div> -->
     <!-- HEADER -->
 
     <!-- HEADLINE -->
     <section id="banner">
-      <h1>Ubiquitous Data & Intelligent Computing Lab</h1>
+      <h1>
+        <span>Ubiquitous Data &</span>
+        <span> Intelligent Computing Lab</span>
+      </h1>
       <h1>普及資料與智慧運算實驗室</h1>
       <blockquote>
-        If you can't explain it simply, you don't understand it well enough.
+        <span>If you can't explain it simply, </span>
+        <span>you don't understand it well enough.</span>
       </blockquote>
     </section>
     <!-- HEADLINE -->
@@ -48,10 +62,10 @@
     <section class="wrapper">
       <div class="inner">
         <div class="flex flex-2">
+          <!-- <main> -->
           <article>
-            <header>
-              <h3>Research Topics</h3>
-            </header>
+            <!-- <section> -->
+            <h3>Research Topics</h3>
             <ul>
               <li>Natural Language Processing</li>
               <li>Data Mining</li>
@@ -60,11 +74,10 @@
               <li>Mobile Data Management and Application Development</li>
               <li>Ubiquitous Computing</li>
             </ul>
+            <!-- </section> -->
           </article>
           <article>
-            <header>
-              <h3>Motivation</h3>
-            </header>
+            <h3>Motivation</h3>
             <p>
               本實驗室近期研究規劃著眼於利用深度學習技術於文字資料探勘與自然語言處理(Text
               Mining and Natural Language
@@ -73,6 +86,7 @@
               Generation)兩面向。
             </p>
           </article>
+          <!-- </main> -->
         </div>
       </div>
     </section>
@@ -85,120 +99,112 @@
           <h2>現任成員</h2>
         </header>
         <div class="flex flex-4">
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/fan.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/fan.jpg" />
             <h3>Yao-Chung Fan</h3>
-            <a target="_blank" href="http://web.nchu.edu.tw/~yfan/">Home </a>
+            <a href="http://web.nchu.edu.tw/~yfan/" target="_blank">
+              <i class="fas fa-home"></i>
+            </a>
+            <a href="mailto:yfan@nchu.edu.tw" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/zyh.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/zyh.jpg" />
             <h3>詹英鴻</h3>
+            <a href="https://github.com/Harry-Chan" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
             <a
-              target="_blank"
               href="https://www.aclweb.org/anthology/D19-5821/"
+              target="_blank"
             >
               基於BERT深度學習模型之問答語句自動生成技術
             </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/chl.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/zhl.jpg" />
             <h3>Eric Lam</h3>
-            <a target="_blank" href="https://github.com/voidful"> GitHub </a>
+            <a href="https://github.com/voidful" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/pxy.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/pxy.jpg" />
             <h3>彭顯詠</h3>
-            <p>k7489759@gmail.com</p>
+            <a href="https://github.com/seanbbear" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:k7489759@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/hbj.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/hbj.jpg" />
             <h3>黃柏鈞</h3>
-            <a target="_blank" href="https://github.com/p208p2002">GitHub </a>
+            <a href="https://github.com/p208p2002" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/wmn.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/wmn.jpg" />
             <h3>吳孟霓</h3>
-            <p></p>
+            <a href="https://github.com/wmn0812" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/cpx.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/cpx.jpg" />
             <h3>蔡霈炫</h3>
-            <p></p>
+            <a href="https://github.com/Cai-Pei-Xuan" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/xwy.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/xwy.jpg" />
             <h3>徐偉耀</h3>
-            <p></p>
+            <a href="https://github.com/njames741" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/cjs.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/cjs.jpg" />
             <h3>蔡至朔</h3>
-            <p></p>
           </div>
-          <div class="box person">
-            <!-- <div class="image round">
-              <img src="./assets/img/avatars/xjw.jpg" />
-            </div> -->
+          <div class="member">
+            <!-- <img src="./assets/img/avatars/xjw.jpg" /> -->
             <h3>謝繼緯</h3>
-            <p></p>
+            <a href="" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <div class="box person">
-            <!-- <div class="image round">
-              <img src="./assets/img/avatars/.jpg" />
-            </div> -->
+          <div class="member">
+            <!-- <img src="./assets/img/avatars/zyz.jpg" /> -->
             <h3>張友澤</h3>
             <p></p>
           </div>
-          <div class="box person">
-            <!-- <div class="image round">
-              <img src="./assets/img/avatars/.jpg" />
-            </div> -->
+          <div class="member">
+            <!-- <img src="./assets/img/avatars/wyx.jpg" /> -->
             <h3>王彥翔</h3>
             <p></p>
           </div>
-          <div class="box person">
-            <!-- <div class="image round">
-              <img src="./assets/img/avatars/.jpg" />
-            </div> -->
+          <div class="member">
+            <!-- <img src="./assets/img/avatars/czq.jpg" /> -->
             <h3>陳紫淇</h3>
             <p></p>
           </div>
-          <div class="box person">
-            <!-- <div class="image round">
-              <img src="./assets/img/avatars/.jpg" />
-            </div> -->
+          <div class="member">
+            <!-- <img src="./assets/img/avatars/whj.jpg" /> -->
             <h3>王慧娟</h3>
             <p></p>
           </div>
-          <div class="box person">
-            <!-- <div class="image round">
-              <img src="./assets/img/avatars/.jpg" />
-            </div> -->
+          <div class="member">
+            <!-- <img src="./assets/img/avatars/syt.jpg" /> -->
             <h3>時御唐</h3>
             <p></p>
           </div>
-          <div class="box person">
-            <!-- <div class="image round">
-              <img src="./assets/img/avatars/.jpg" />
-            </div> -->
+          <div class="member">
+            <!-- <img src="./assets/img/avatars/tjw.jpg" /> -->
             <h3>童智威</h3>
             <p></p>
           </div>
@@ -222,11 +228,11 @@
               </a>
             </header>
             <p>
-              A Powerful AI Understanding Your Articles and Automatically
-              Generating Question Sentences for You.
+              A powerful AI that understanding your articles and automatically
+              generate questions for you.
             </p>
             <footer>
-              <a href="./querator.html" class="button special">Try</a>
+              <a href="./querator.html" class="btn btn-blue">Try</a>
             </footer>
           </article>
         </div>
@@ -237,14 +243,14 @@
     <!-- PUBLICATION -->
     <section class="wrapper special">
       <div class="inner">
-        <header class="align-center">
+        <header class="text-center">
           <h2>Publications</h2>
           <p>what we have done</p>
 
           <h3>Recent years</h3>
         </header>
 
-        <header class="align-left">
+        <header class="text-left">
           <h4>Querator AI 讓人工智慧幫您出題！閱讀測驗試題自動生成！</h4>
           <blockquote>
             我們基於深度學習技術，開發一閱讀檢測試題自動生成系統，透過文字生成技術(Natural
@@ -256,7 +262,7 @@
           </blockquote>
         </header>
 
-        <header class="align-left">
+        <header class="text-left">
           <h4>基於法院判決書之人物標注與社群結構檢索系統</h4>
           <blockquote>
             我們基於利用深度學習技術整理裁判書資料並萃取為人、事、時、地之結構化資訊。希冀找出隱藏於裁判書資料中之關聯資訊。基於法院判決書共現關聯，建立人物社群關聯網絡，建立視覺化社群結構分析如影片中所例，其中節點為所有判決書中曾出現之人名，邊為兩個人物曾共同於一篇法律判決書出現。<br />(with
@@ -264,7 +270,7 @@
           </blockquote>
         </header>
 
-        <header class="align-left">
+        <header class="text-left">
           <h4>深度學習於醫療檢測之應用</h4>
           <blockquote>
             結核病因為長期占據全球十大死因榜單之一而一直被人們所慎重對待，對於結核病的相關檢測及研究也隨著時間持續地被推出。由於現今結核病只要受到完善的治療幾乎都可痊癒，也因此讓結核病的檢測更顯得重要。然而，對於某些開發中國家，結核菌的檢測因為費用昂貴以及檢測設備的龐大與電源供應需求，始終無法作為其廣泛的篩選方法，因此本專題預計與台灣大學醫工所陳建甫教授跨領域合作，基於其研究團隊所開發之「螢光奈米銅團簇於聚合酶鏈鎖反應檢測」技術，並結合機器學習CNN(Convolution
@@ -275,7 +281,7 @@
         </header>
 
         <h3>Former years</h3>
-        <header class="align-left">
+        <header class="text-left">
           <h4>基於行動裝置使用內容關鍵字探勘之多面向使用者興趣側寫檔研究</h4>
           <blockquote>
             本研究計畫擬協同工業技術研究院團隊,延伸前
@@ -288,7 +294,7 @@
             (105-106年工業技術研究院斷金計畫, NTD: 2,600,000)
           </blockquote>
         </header>
-        <header class="align-left">
+        <header class="text-left">
           <h4>基於電力資料分析之事件偵測研究</h4>
           <blockquote>
             於 2014
@@ -308,14 +314,14 @@
             (105-106科技部專題研究計畫 NTD: 702,000)
           </blockquote>
         </header>
-        <header class="align-left">
+        <header class="text-left">
           <h4>植基於行動裝置移動軌跡之使用者資訊分析研究</h4>
           <blockquote>
             隨著時代的演進，智慧型行動裝置無所不在地融入我們的生活，智慧型行動裝置幾乎隨時隨地的伴隨著使用者，而本計畫著基於前期研究計畫執行過程中了所累積之大量使用者之智慧型行動裝置使用資料，認為探勘分析出使用者之身份資訊、個人興趣、社群關係網路、使用者個人移動習慣將為可能。因此本研究計畫於行動裝置資料探勘角度來切入分析智慧型行動裝置使用者。<br />
             (103-105科技部專題研究計畫(兩年期) NTD: 1,616,000)
           </blockquote>
         </header>
-        <header class="align-left">
+        <header class="text-left">
           <h4>
             智慧型行動裝置使用內容關鍵字檢索與探勘研究於適地適時地理活動推薦系統之應用
           </h4>
@@ -324,7 +330,7 @@
             (104年工業技術研究院斷金計畫, NTD: 1,661,750)
           </blockquote>
         </header>
-        <header class="align-left">
+        <header class="text-left">
           <h4>
             Mining User Behavior For Better Service Provision to HTC customers
           </h4>
@@ -334,7 +340,7 @@
             共同主持)
           </blockquote>
         </header>
-        <header class="align-left">
+        <header class="text-left">
           <h4>非定量功率電器於非侵入式居家負載辨識研究</h4>
           <blockquote>
             本計畫主要探討如何於單點偵測的架構下，使用間接感測之方式估算非定量功率消耗之電器(如電腦與變頻式冷氣機)電力消耗量，此類之電器為現有非侵入式居家負載準確率不佳的主因，因此如何估算其電力消耗，並用之排除非定量功率消耗之電器於整體系統所造成之影響，來提升電器辨識準確率便成為一研究主題。<br />
@@ -352,128 +358,92 @@
           <h2>歷屆成員</h2>
         </header>
         <div class="flex flex-4">
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/csh.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/csh.jpg" />
             <h3>陳聖軒</h3>
             <p>文字嵌入模型於文本分類任務之比較研究</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/wsw.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/wsw.jpg" />
             <h3>黃思穎</h3>
             <p>
               一個於儲存空間受限行動裝置上基於文字嵌入模型之物品推薦架構及其通訊成本優化研究
             </p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/cmy.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/cmy.jpg" />
             <h3>鄭銘毅</h3>
             <p>基於Context Logs之行動裝置使用者意圖偵測</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/benkit.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/benkit.jpg" />
             <h3>沃克潘</h3>
             <p>基於文字嵌入模型之點擊誘餌偵測研究</p>
           </div>
-          <!-- </div> -->
-          <!-- <div class="flex flex-4"> -->
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/wgx.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/wgx.jpg" />
             <h3>溫景翔</h3>
             <p>基於成對比較記錄之物件排名架構及其於商品頁面點擊記錄之應用</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/cyt.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/cyt.jpg" />
             <h3>陳奕廷</h3>
             <p>無監督式文字風格轉換-以白話武俠風格為例</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/sy.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/sy.jpg" />
             <h3>游哲軒</h3>
             <p>
               基於Attentive Sequence-to-Sequence RNNs的行動裝置使用者意圖理解
             </p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/landy.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/landy.jpg" />
             <h3>劉凱婷</h3>
             <p>個人化文字嵌入模型與其於個人化文件檢索之應用</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/wky.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/wky.jpg" />
             <h3>王君瑜</h3>
             <p>一個基於文字語意向量分群架構之文本資料事件追蹤技術</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/ctw.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/ctw.jpg" />
             <h3>張泰瑋</h3>
             <a target="_blank" href="https://github.com/david30907d">GitHub </a>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/shaun.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/shaun.jpg" />
             <h3>楊尚恩</h3>
             <p></p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/ksy.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/ksy.jpg" />
             <h3>江承陽</h3>
             <p>基於BERT深度學習模型之論文語句分類</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/cbh.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/cbh.jpg" />
             <h3>蔡秉宏</h3>
             <p>基於BERT深度語言理解模型之文章自動摘要技術</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/wsy.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/wsy.jpg" />
             <h3>翁湘雲</h3>
             <p>基於深度學習模型之文本主題段落切割技術</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/glg.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/glg.jpg" />
             <h3>姜力綱</h3>
             <p>基於BERT之關鍵字生成新聞文章</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/kwp.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/kwp.jpg" />
             <h3>郭溫蘋</h3>
             <p>特定領域問答模型之小樣本學習研究</p>
           </div>
-          <div class="box person">
-            <div class="image round">
-              <img src="./assets/img/avatars/wwj.jpg" />
-            </div>
+          <div class="member">
+            <img src="./assets/img/avatars/wwj.jpg" />
             <h3>翁偉哲</h3>
             <p>探討BERT對數字的理解</p>
           </div>
@@ -489,27 +459,27 @@
           <h2>在職班</h2>
         </header>
         <div class="flex flex-4">
-          <div class="box person">
+          <div class="member">
             <h3>陳宜岑</h3>
             <p>電力資料視覺化異常分析</p>
           </div>
-          <div class="box person">
+          <div class="member">
             <h3>謝孟樺</h3>
             <p>考量上下文字詞共現關係之短文斷詞研究</p>
           </div>
-          <div class="box person">
+          <div class="member">
             <h3>黃子忠</h3>
             <p>考量野放農園環境下之影像擷取嵌入式裝置設計</p>
           </div>
-          <div class="box person">
+          <div class="member">
             <h3>李立仁</h3>
             <p>一個於行動裝置端運算之停留點循序樣型探勘演算法</p>
           </div>
-          <div class="box person">
+          <div class="member">
             <h3>徐政元</h3>
             <p>一個以圖形節點中介值為指標之移動式Wi-Fi熱點偵測技術</p>
           </div>
-          <div class="box person">
+          <div class="member">
             <h3>王美懿</h3>
             <p>以WIFI服務設定辨識碼為提示依據之記事提醒系統設計與實作</p>
           </div>
@@ -523,7 +493,7 @@
       <div class="inner">
         <div class="flex">
           <div>
-            <iframe
+            <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5102.514245095546!2d120.67884830798728!3d24.118288666345826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693ce2ab580c49%3A0xb7210528d610abb3!2z5ZyL56uL5Lit6IiI5aSn5a2455CG5a246Zmi5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1601967340375!5m2!1szh-TW!2stw"
               width="400"
               height="300"
@@ -532,13 +502,13 @@
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
-            ></iframe>
+            ></iframe> -->
           </div>
           <div class="copyright">
-            UDIC Address:
-            <a target="_blank" href="https://goo.gl/maps/8tAPo9fd1j92"
-              >理學大樓-720 </a
-            >. Telephone: 04-22840497#720
+            <address>理學大樓-720</address>
+            <a target="_blank" href="https://goo.gl/maps/8tAPo9fd1j92">Maps</a>
+            <a href="mailto:udiclab@email.nchu.edu.tw">Email</a>
+            <a href="tel:04-22840497#720">Phone</a>
           </div>
           <ul class="icons">
             <li>
