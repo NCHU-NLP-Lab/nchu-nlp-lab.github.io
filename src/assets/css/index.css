@@ -1987,6 +1987,12 @@ article.wrapper.style1 {
   color: #bacee6;
 }
 
+section.wrapper.style1 a,
+article.wrapper.style1 a {
+  background: #08192d;
+  color: #bacee6;
+}
+
 section.wrapper.style1 header h2,
 article.wrapper.style1 header h2 {
   color: #fff;
