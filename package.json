@@ -30,6 +30,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "@fortawesome/fontawesome-free": "^5.15.0",
+    "@lottiefiles/lottie-player": "^0.5.1",
     "jquery": "^3.5.1",
     "postcss": "^8.1.1",
     "postcss-loader": "^4.0.3",

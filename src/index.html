@@ -26,57 +26,49 @@
     </script>
   </head>
   <body>
-    <!-- HEADER -->
-    <nav class="bg-transparent px-8">
-      <div class="-mb-px flex justify-center">
-        <a class="nav-item active" href="#"> UDIC Lab </a>
-        <a class="nav-item" href="#"> 現任成員 </a>
-        <a class="nav-item" href="#"> Service </a>
-        <a class="nav-item" href="#"> Publications </a>
-        <a class="nav-item" href="#"> 歷屆成員 </a>
-        <a class="nav-item" href="#"> 在職班 </a>
-      </div>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <ul class="flex">
+        <li class="nav-item"><a href="#">UDIC Lab</a></li>
+        <li class="nav-item"><a href="#section-member">現任成員</a></li>
+        <li class="nav-item"><a href="#section-service">Services</a></li>
+        <li class="nav-item">
+          <a href="#section-publication">Publications</a>
+        </li>
+        <li class="nav-item"><a href="#section-former">歷屆成員</a></li>
+        <li class="nav-item"><a href="#section-inservice">在職班</a></li>
+      </ul>
     </nav>
-    <!-- <div id="header">
-      <div class="inner">
-        <a href="." class="logo">UDIC Lab</a>
-      </div>
-    </div> -->
-    <!-- HEADER -->
+    <!-- NAVBAR -->
 
-    <!-- HEADLINE -->
+    <!-- BANNER -->
     <section id="banner">
       <h1>
-        <span>Ubiquitous Data &</span>
-        <span> Intelligent Computing Lab</span>
+        <span class="inline-block">Ubiquitous Data &</span>
+        <span class="inline-block"> Intelligent Computing Lab</span>
       </h1>
       <h1>普及資料與智慧運算實驗室</h1>
       <blockquote>
-        <span>If you can't explain it simply, </span>
-        <span>you don't understand it well enough.</span>
+        <span class="inline-block">If you can't explain it simply, </span>
+        <span class="inline-block">you don't understand it well enough.</span>
       </blockquote>
     </section>
-    <!-- HEADLINE -->
+    <!-- BANNER -->
 
     <!-- SUMMARY -->
-    <section class="wrapper">
-      <div class="inner">
-        <div class="flex flex-2">
-          <!-- <main> -->
-          <article>
-            <!-- <section> -->
-            <h3>Research Topics</h3>
-            <ul>
-              <li>Natural Language Processing</li>
-              <li>Data Mining</li>
-              <li>Big Data Management</li>
-              <li>Social Networks</li>
-              <li>Mobile Data Management and Application Development</li>
-              <li>Ubiquitous Computing</li>
-            </ul>
-            <!-- </section> -->
-          </article>
-          <article>
+    <section id="section-summary" class="wrapper">
+      <div class="content">
+        <div id="summary-container">
+          <div class="col-span-1 lg:col-span-1">
+            <lottie-player
+              src="https://assets10.lottiefiles.com/packages/lf20_ynle8i40.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <article class="col-span-2 lg:col-span-1">
             <h3>Motivation</h3>
             <p>
               本實驗室近期研究規劃著眼於利用深度學習技術於文字資料探勘與自然語言處理(Text
@@ -86,19 +78,73 @@
               Generation)兩面向。
             </p>
           </article>
-          <!-- </main> -->
+          <article class="col-span-2 lg:col-span-1">
+            <h3>Research topics</h3>
+            <ul class="list-disc pl-8">
+              <li>Natural Language Processing</li>
+              <li>Data Mining</li>
+              <li>Big Data Management</li>
+              <li>Social Networks</li>
+              <li>Mobile Data Management and Application Development</li>
+              <li>Ubiquitous Computing</li>
+            </ul>
+          </article>
+          <div class="col-span-1 lg:col-span-1">
+            <lottie-player
+              src="https://assets6.lottiefiles.com/packages/lf20_yYOpBn.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div class="col-span-1 lg:col-span-1">
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5102.514245095546!2d120.67884830798728!3d24.118288666345826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693ce2ab580c49%3A0xb7210528d610abb3!2z5ZyL56uL5Lit6IiI5aSn5a2455CG5a246Zmi5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1601967340375!5m2!1szh-TW!2stw"
+              frameborder="0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="col-span-2 lg:col-span-1">
+            <h3>Come reaching us.</h3>
+            <ul class="list-disc pl-8">
+              <li>
+                <address>中興大學 理學大樓-720</address>
+              </li>
+              <li>
+                Email:
+                <a href="mailto:udiclab@email.nchu.edu.tw" class="underline"
+                  >udiclab@email.nchu.edu.tw</a
+                >
+              </li>
+              <li>
+                Phone:
+                <a href="tel:04-22840497#720" class="underline"
+                  >04-22840497 #720</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/NCHU-NLU-Lab"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
     <!-- SUMMARY -->
 
     <!-- MEMBER -->
-    <section class="wrapper style1 special">
-      <div class="inner">
+    <section id="section-member" class="wrapper style1">
+      <div class="content">
         <header>
           <h2>現任成員</h2>
         </header>
-        <div class="flex flex-4">
+        <div class="member-container">
           <div class="member">
             <img src="./assets/img/avatars/fan.jpg" />
             <h3>Yao-Chung Fan</h3>
@@ -113,14 +159,16 @@
             <img src="./assets/img/avatars/zyh.jpg" />
             <h3>詹英鴻</h3>
             <a href="https://github.com/Harry-Chan" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.aclweb.org/anthology/D19-5821/"
-              target="_blank"
-            >
-              基於BERT深度學習模型之問答語句自動生成技術
-            </a>
+              <i class="fab fa-github"></i> </a
+            ><br />
+            <blockquote>
+              <a
+                href="https://www.aclweb.org/anthology/D19-5821/"
+                target="_blank"
+              >
+                基於BERT深度學習模型之問答語句自動生成技術
+              </a>
+            </blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/zhl.jpg" />
@@ -146,6 +194,7 @@
               <i class="fab fa-github"></i>
             </a>
           </div>
+
           <div class="member">
             <img src="./assets/img/avatars/wmn.jpg" />
             <h3>吳孟霓</h3>
@@ -168,7 +217,7 @@
             </a>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/cjs.jpg" />
+            <img src="./assets/img/avatars/czs.jpg" />
             <h3>蔡至朔</h3>
           </div>
           <div class="member">
@@ -179,27 +228,27 @@
             </a>
           </div>
           <div class="member">
-            <!-- <img src="./assets/img/avatars/zyz.jpg" /> -->
+            <img src="./assets/img/avatars/zyz.jpg" />
             <h3>張友澤</h3>
             <p></p>
           </div>
           <div class="member">
-            <!-- <img src="./assets/img/avatars/wyx.jpg" /> -->
+            <img src="./assets/img/avatars/wyx.jpg" />
             <h3>王彥翔</h3>
             <p></p>
           </div>
           <div class="member">
-            <!-- <img src="./assets/img/avatars/czq.jpg" /> -->
+            <img src="./assets/img/avatars/czq.jpg" />
             <h3>陳紫淇</h3>
             <p></p>
           </div>
           <div class="member">
-            <!-- <img src="./assets/img/avatars/whj.jpg" /> -->
+            <img src="./assets/img/avatars/whj.jpg" />
             <h3>王慧娟</h3>
             <p></p>
           </div>
           <div class="member">
-            <!-- <img src="./assets/img/avatars/syt.jpg" /> -->
+            <img src="./assets/img/avatars/syt.jpg" />
             <h3>時御唐</h3>
             <p></p>
           </div>
@@ -214,23 +263,25 @@
     <!-- MEMBER -->
 
     <!-- SERVICES -->
-    <section class="wrapper special">
-      <div class="inner">
+    <section id="section-service" class="wrapper">
+      <div class="content">
         <header>
           <h2>Services</h2>
           <p>Try our APIs</p>
         </header>
-        <div class="flex flex-2">
-          <article>
+        <div class="flex flex-wrap">
+          <article class="w-1/2">
             <header>
               <a target="_blank" href="./querator.html">
                 <h3>Querator</h3>
               </a>
             </header>
-            <p>
-              A powerful AI that understanding your articles and automatically
-              generate questions for you.
-            </p>
+            <main>
+              <p>
+                A powerful AI that understanding your articles and automatically
+                generate questions for you.
+              </p>
+            </main>
             <footer>
               <a href="./querator.html" class="btn btn-blue">Try</a>
             </footer>
@@ -241,62 +292,62 @@
     <!-- SERVICES -->
 
     <!-- PUBLICATION -->
-    <section class="wrapper special">
-      <div class="inner">
+    <section id="section-publication" class="wrapper">
+      <div class="content">
         <header class="text-center">
           <h2>Publications</h2>
           <p>what we have done</p>
-
-          <h3>Recent years</h3>
         </header>
-
-        <header class="text-left">
+        <h3>Recent years</h3>
+        <article>
           <h4>Querator AI 讓人工智慧幫您出題！閱讀測驗試題自動生成！</h4>
-          <blockquote>
+          <p>
             我們基於深度學習技術，開發一閱讀檢測試題自動生成系統，透過文字生成技術(Natural
             Language
             Generation)幫你出問題製造考卷，主要是根據你所輸入的課文、短文、閱讀測驗或關鍵字，產生出相關對應的題目，這項服務要解決製作教材人力成本的痛點，能夠自動、快速而且大量產生符合需求的題目，再由老師編輯符合需求的客製化考題。(
             Querator AI)
-            目前可同時支援中、英文兩語言，預計未來將支援更多語系。我們透過深度學習文字生成技術的突破，將大幅減低出版業、行銷業務與教師於閱讀檢測中人力成本，為相關產業提供協助、創造更多價值。<br />(with
-            詹英鴻、鄭高文、黃柏鈞、蔡霈炫、徐偉耀)
-          </blockquote>
-        </header>
+            目前可同時支援中、英文兩語言，預計未來將支援更多語系。我們透過深度學習文字生成技術的突破，將大幅減低出版業、行銷業務與教師於閱讀檢測中人力成本，為相關產業提供協助、創造更多價值。
+          </p>
+          <blockquote>(with 詹英鴻、鄭高文、黃柏鈞、蔡霈炫、徐偉耀)</blockquote>
+        </article>
 
-        <header class="text-left">
+        <article>
           <h4>基於法院判決書之人物標注與社群結構檢索系統</h4>
-          <blockquote>
-            我們基於利用深度學習技術整理裁判書資料並萃取為人、事、時、地之結構化資訊。希冀找出隱藏於裁判書資料中之關聯資訊。基於法院判決書共現關聯，建立人物社群關聯網絡，建立視覺化社群結構分析如影片中所例，其中節點為所有判決書中曾出現之人名，邊為兩個人物曾共同於一篇法律判決書出現。<br />(with
-            郭溫蘋、姜力綱、翁偉哲)
-          </blockquote>
-        </header>
+          <p>
+            我們基於利用深度學習技術整理裁判書資料並萃取為人、事、時、地之結構化資訊。希冀找出隱藏於裁判書資料中之關聯資訊。基於法院判決書共現關聯，建立人物社群關聯網絡，建立視覺化社群結構分析如影片中所例，其中節點為所有判決書中曾出現之人名，邊為兩個人物曾共同於一篇法律判決書出現。
+          </p>
+          <blockquote>(with 郭溫蘋、姜力綱、翁偉哲)</blockquote>
+        </article>
 
-        <header class="text-left">
+        <article>
           <h4>深度學習於醫療檢測之應用</h4>
-          <blockquote>
+          <p>
             結核病因為長期占據全球十大死因榜單之一而一直被人們所慎重對待，對於結核病的相關檢測及研究也隨著時間持續地被推出。由於現今結核病只要受到完善的治療幾乎都可痊癒，也因此讓結核病的檢測更顯得重要。然而，對於某些開發中國家，結核菌的檢測因為費用昂貴以及檢測設備的龐大與電源供應需求，始終無法作為其廣泛的篩選方法，因此本專題預計與台灣大學醫工所陳建甫教授跨領域合作，基於其研究團隊所開發之「螢光奈米銅團簇於聚合酶鏈鎖反應檢測」技術，並結合機器學習CNN(Convolution
             Neural
-            Network)類神經網路影像辨識的技術，讓電腦自主學習分辨試管的呈色結果，來協助現有試管反應呈色後無法精準且快速分辨呈色結果之問題。<br />(with
-            王韋鈞、沈柏瑋)
-          </blockquote>
-        </header>
+            Network)類神經網路影像辨識的技術，讓電腦自主學習分辨試管的呈色結果，來協助現有試管反應呈色後無法精準且快速分辨呈色結果之問題。
+          </p>
+          <blockquote>(with 王韋鈞、沈柏瑋)</blockquote>
+        </article>
 
         <h3>Former years</h3>
-        <header class="text-left">
+        <article>
           <h4>基於行動裝置使用內容關鍵字探勘之多面向使用者興趣側寫檔研究</h4>
-          <blockquote>
+          <p>
             本研究計畫擬協同工業技術研究院團隊,延伸前
             期計畫成果,延伸發展一個基於行動裝置使用內容短字詞語意分析(Short Text
             Semantic Understanding)與多面向使用者興趣側寫檔研究之適時適地
             IOI(Item-of-Interest)提示系統,
             該系統將主動地分析推測使用者之短字詞語意與考量各種面向下之使用者興趣側寫檔,推測行動裝
             置使用者當下之可能感興趣項目(Item-of-Interest),來提示使用者希冀提供行動裝置持有者更
-            智慧化與更即時之智慧型行動裝置服務<br />
+            智慧化與更即時之智慧型行動裝置服務
+          </p>
+          <blockquote>
             (105-106年工業技術研究院斷金計畫, NTD: 2,600,000)
           </blockquote>
-        </header>
-        <header class="text-left">
+        </article>
+        <article>
           <h4>基於電力資料分析之事件偵測研究</h4>
-          <blockquote>
+          <p>
             於 2014
             年迄今,我們協助國立中興大學進行校園用電之量測;由中興資工系同學利用
             開源硬體,自行建置電力量測裝置,量測中興大學理學大樓總計十層樓之即時用電資料。利
@@ -310,142 +361,154 @@
             收集資料已逾一年。而除了當初所設定之校園用電量測目標外,我們發現我們所建立之校園
             電力監控平台為一個物聯網研究之試金石;即時且密集的電力量測資料,提供我們一個豐富
             的資料集,讓我們探索其可能之應用與研究。因此於本研究計畫中,我們擬定探索現有所收
-            集到之用電資料,並以其於建築空間中事件偵測之可能性進行研究議題探討。<br />
-            (105-106科技部專題研究計畫 NTD: 702,000)
-          </blockquote>
-        </header>
-        <header class="text-left">
+            集到之用電資料,並以其於建築空間中事件偵測之可能性進行研究議題探討。
+          </p>
+          <blockquote>(105-106科技部專題研究計畫 NTD: 702,000)</blockquote>
+        </article>
+        <article>
           <h4>植基於行動裝置移動軌跡之使用者資訊分析研究</h4>
+          <p>
+            隨著時代的演進，智慧型行動裝置無所不在地融入我們的生活，智慧型行動裝置幾乎隨時隨地的伴隨著使用者，而本計畫著基於前期研究計畫執行過程中了所累積之大量使用者之智慧型行動裝置使用資料，認為探勘分析出使用者之身份資訊、個人興趣、社群關係網路、使用者個人移動習慣將為可能。因此本研究計畫於行動裝置資料探勘角度來切入分析智慧型行動裝置使用者。
+          </p>
           <blockquote>
-            隨著時代的演進，智慧型行動裝置無所不在地融入我們的生活，智慧型行動裝置幾乎隨時隨地的伴隨著使用者，而本計畫著基於前期研究計畫執行過程中了所累積之大量使用者之智慧型行動裝置使用資料，認為探勘分析出使用者之身份資訊、個人興趣、社群關係網路、使用者個人移動習慣將為可能。因此本研究計畫於行動裝置資料探勘角度來切入分析智慧型行動裝置使用者。<br />
             (103-105科技部專題研究計畫(兩年期) NTD: 1,616,000)
           </blockquote>
-        </header>
-        <header class="text-left">
+        </article>
+        <article>
           <h4>
             智慧型行動裝置使用內容關鍵字檢索與探勘研究於適地適時地理活動推薦系統之應用
           </h4>
-          <blockquote>
-            由於智慧型行動裝置的普及與使用者的高接受程度，智慧型行動裝置幾乎隨時隨地地伴隨著使用者。我們認為智慧型行動裝置不僅僅只是一具迷你隨身電腦，事實上，智慧型行動裝置可視為一行動裝置持有人之資料蒐集器與行為觀察者，行動裝置上所搭載的感測器元件與行動裝置的持有者使用裝置之歷史紀錄提供我們各式各樣極富價值之資料，此種方式之資料蒐集也將更貼近使用者與更無所不在。未來行動運算程式的發展將會整合雲端、行動科技、社會網絡與龐大資料分析等技術產生極大的市場規模與商業價值。通訊產品硬體利潤大幅降低之後，消費性行動應用與服務將是未來行動裝置開發之趨勢。有鑑於此，本研究計畫擬協同工業技術研究院，開發一基於行動裝置使用內容關鍵字檢索與探勘之適時適地地理活動推薦系統，該系統將主動地分析推測使用者之喜好，並根據所推測之結果，即時地推薦行動裝置持有者所在地點附近之可能感興趣活動，希冀提供行動裝置持有者更智慧化與更即時之適地性服務。<br />
-            (104年工業技術研究院斷金計畫, NTD: 1,661,750)
-          </blockquote>
-        </header>
-        <header class="text-left">
+          <p>
+            由於智慧型行動裝置的普及與使用者的高接受程度，智慧型行動裝置幾乎隨時隨地地伴隨著使用者。我們認為智慧型行動裝置不僅僅只是一具迷你隨身電腦，事實上，智慧型行動裝置可視為一行動裝置持有人之資料蒐集器與行為觀察者，行動裝置上所搭載的感測器元件與行動裝置的持有者使用裝置之歷史紀錄提供我們各式各樣極富價值之資料，此種方式之資料蒐集也將更貼近使用者與更無所不在。未來行動運算程式的發展將會整合雲端、行動科技、社會網絡與龐大資料分析等技術產生極大的市場規模與商業價值。通訊產品硬體利潤大幅降低之後，消費性行動應用與服務將是未來行動裝置開發之趨勢。有鑑於此，本研究計畫擬協同工業技術研究院，開發一基於行動裝置使用內容關鍵字檢索與探勘之適時適地地理活動推薦系統，該系統將主動地分析推測使用者之喜好，並根據所推測之結果，即時地推薦行動裝置持有者所在地點附近之可能感興趣活動，希冀提供行動裝置持有者更智慧化與更即時之適地性服務。
+          </p>
+          <blockquote>(104年工業技術研究院斷金計畫, NTD: 1,661,750)</blockquote>
+        </article>
+        <article>
           <h4>
             Mining User Behavior For Better Service Provision to HTC customers
           </h4>
+          <p>
+            本計畫為一與hTC宏達電子之產學合作研究計畫，由hTC提供120具開發中之智慧型行動裝置發放於大學校園使用，該行動裝置上裝配有資料蒐集app，負責蒐集諸如使用者之行動軌跡、通話資訊、app的使用方式等使用者資料，並計畫透過發展巨量資料探勘技術，來瞭解HTC使用者，提升並改善hTC裝置之開發與良好服務之提供。
+          </p>
           <blockquote>
-            本計畫為一與hTC宏達電子之產學合作研究計畫，由hTC提供120具開發中之智慧型行動裝置發放於大學校園使用，該行動裝置上裝配有資料蒐集app，負責蒐集諸如使用者之行動軌跡、通話資訊、app的使用方式等使用者資料，並計畫透過發展巨量資料探勘技術，來瞭解HTC使用者，提升並改善hTC裝置之開發與良好服務之提供。<br />
             (宏達電子hTC產學研發計畫, 兩年期2013.01-2014.12, NTD: 2,676,000.
             共同主持)
           </blockquote>
-        </header>
-        <header class="text-left">
+        </article>
+        <article>
           <h4>非定量功率電器於非侵入式居家負載辨識研究</h4>
-          <blockquote>
-            本計畫主要探討如何於單點偵測的架構下，使用間接感測之方式估算非定量功率消耗之電器(如電腦與變頻式冷氣機)電力消耗量，此類之電器為現有非侵入式居家負載準確率不佳的主因，因此如何估算其電力消耗，並用之排除非定量功率消耗之電器於整體系統所造成之影響，來提升電器辨識準確率便成為一研究主題。<br />
-            (半年期2013.07-2013.12, NTD: 175,000.)
-          </blockquote>
-        </header>
+          <p>
+            本計畫主要探討如何於單點偵測的架構下，使用間接感測之方式估算非定量功率消耗之電器(如電腦與變頻式冷氣機)電力消耗量，此類之電器為現有非侵入式居家負載準確率不佳的主因，因此如何估算其電力消耗，並用之排除非定量功率消耗之電器於整體系統所造成之影響，來提升電器辨識準確率便成為一研究主題。
+          </p>
+          <blockquote>(半年期2013.07-2013.12, NTD: 175,000.)</blockquote>
+        </article>
       </div>
     </section>
     <!-- PUBLICATION -->
 
     <!-- FORMER MEMBER -->
-    <section class="wrapper style1 special">
-      <div class="inner">
+    <section id="section-former" class="wrapper style1">
+      <div class="content">
         <header>
           <h2>歷屆成員</h2>
         </header>
-        <div class="flex flex-4">
+        <div class="member-container">
           <div class="member">
             <img src="./assets/img/avatars/csh.jpg" />
             <h3>陳聖軒</h3>
-            <p>文字嵌入模型於文本分類任務之比較研究</p>
+            <blockquote>文字嵌入模型於文本分類任務之比較研究</blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/wsw.jpg" />
             <h3>黃思穎</h3>
-            <p>
+            <blockquote>
               一個於儲存空間受限行動裝置上基於文字嵌入模型之物品推薦架構及其通訊成本優化研究
-            </p>
+            </blockquote>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/cmy.jpg" />
+            <img src="./assets/img/avatars/zmy.jpg" />
             <h3>鄭銘毅</h3>
-            <p>基於Context Logs之行動裝置使用者意圖偵測</p>
+            <blockquote>基於Context Logs之行動裝置使用者意圖偵測</blockquote>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/benkit.jpg" />
+            <img src="./assets/img/avatars/wkp.jpg" />
             <h3>沃克潘</h3>
-            <p>基於文字嵌入模型之點擊誘餌偵測研究</p>
+            <blockquote>基於文字嵌入模型之點擊誘餌偵測研究</blockquote>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/wgx.jpg" />
+            <img src="./assets/img/avatars/wjx.jpg" />
             <h3>溫景翔</h3>
-            <p>基於成對比較記錄之物件排名架構及其於商品頁面點擊記錄之應用</p>
+            <blockquote>
+              基於成對比較記錄之物件排名架構及其於商品頁面點擊記錄之應用
+            </blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/cyt.jpg" />
             <h3>陳奕廷</h3>
-            <p>無監督式文字風格轉換-以白話武俠風格為例</p>
+            <blockquote>無監督式文字風格轉換-以白話武俠風格為例</blockquote>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/sy.jpg" />
+            <img src="./assets/img/avatars/yzx.jpg" />
             <h3>游哲軒</h3>
-            <p>
+            <blockquote>
               基於Attentive Sequence-to-Sequence RNNs的行動裝置使用者意圖理解
-            </p>
+            </blockquote>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/landy.jpg" />
+            <img src="./assets/img/avatars/lkt.jpg" />
             <h3>劉凱婷</h3>
-            <p>個人化文字嵌入模型與其於個人化文件檢索之應用</p>
+            <blockquote>
+              個人化文字嵌入模型與其於個人化文件檢索之應用
+            </blockquote>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/wky.jpg" />
+            <img src="./assets/img/avatars/wjy.jpg" />
             <h3>王君瑜</h3>
-            <p>一個基於文字語意向量分群架構之文本資料事件追蹤技術</p>
+            <blockquote>
+              一個基於文字語意向量分群架構之文本資料事件追蹤技術
+            </blockquote>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/ctw.jpg" />
+            <img src="./assets/img/avatars/ztw.jpg" />
             <h3>張泰瑋</h3>
-            <a target="_blank" href="https://github.com/david30907d">GitHub </a>
+            <a href="https://github.com/david30907d" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
           <div class="member">
-            <img src="./assets/img/avatars/shaun.jpg" />
+            <img src="./assets/img/avatars/yse.jpg" />
             <h3>楊尚恩</h3>
-            <p></p>
+            <blockquote></blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/ksy.jpg" />
             <h3>江承陽</h3>
-            <p>基於BERT深度學習模型之論文語句分類</p>
+            <blockquote>基於BERT深度學習模型之論文語句分類</blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/cbh.jpg" />
             <h3>蔡秉宏</h3>
-            <p>基於BERT深度語言理解模型之文章自動摘要技術</p>
+            <blockquote>基於BERT深度語言理解模型之文章自動摘要技術</blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/wsy.jpg" />
             <h3>翁湘雲</h3>
-            <p>基於深度學習模型之文本主題段落切割技術</p>
+            <blockquote>基於深度學習模型之文本主題段落切割技術</blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/glg.jpg" />
             <h3>姜力綱</h3>
-            <p>基於BERT之關鍵字生成新聞文章</p>
+            <blockquote>基於BERT之關鍵字生成新聞文章</blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/kwp.jpg" />
             <h3>郭溫蘋</h3>
-            <p>特定領域問答模型之小樣本學習研究</p>
+            <blockquote>特定領域問答模型之小樣本學習研究</blockquote>
           </div>
           <div class="member">
             <img src="./assets/img/avatars/wwj.jpg" />
             <h3>翁偉哲</h3>
-            <p>探討BERT對數字的理解</p>
+            <blockquote>探討BERT對數字的理解</blockquote>
           </div>
         </div>
       </div>
@@ -453,35 +516,41 @@
     <!-- FORMER MEMBER -->
 
     <!-- IN-SERVICE -->
-    <section class="wrapper style1 special">
-      <div class="inner">
+    <section id="section-inservice" class="wrapper style1">
+      <div class="content">
         <header>
           <h2>在職班</h2>
         </header>
-        <div class="flex flex-4">
+        <div class="member-container">
           <div class="member">
             <h3>陳宜岑</h3>
-            <p>電力資料視覺化異常分析</p>
+            <blockquote>電力資料視覺化異常分析</blockquote>
           </div>
           <div class="member">
             <h3>謝孟樺</h3>
-            <p>考量上下文字詞共現關係之短文斷詞研究</p>
+            <blockquote>考量上下文字詞共現關係之短文斷詞研究</blockquote>
           </div>
           <div class="member">
             <h3>黃子忠</h3>
-            <p>考量野放農園環境下之影像擷取嵌入式裝置設計</p>
+            <blockquote>考量野放農園環境下之影像擷取嵌入式裝置設計</blockquote>
           </div>
           <div class="member">
             <h3>李立仁</h3>
-            <p>一個於行動裝置端運算之停留點循序樣型探勘演算法</p>
+            <blockquote>
+              一個於行動裝置端運算之停留點循序樣型探勘演算法
+            </blockquote>
           </div>
           <div class="member">
             <h3>徐政元</h3>
-            <p>一個以圖形節點中介值為指標之移動式Wi-Fi熱點偵測技術</p>
+            <blockquote>
+              一個以圖形節點中介值為指標之移動式Wi-Fi熱點偵測技術
+            </blockquote>
           </div>
           <div class="member">
             <h3>王美懿</h3>
-            <p>以WIFI服務設定辨識碼為提示依據之記事提醒系統設計與實作</p>
+            <blockquote>
+              以WIFI服務設定辨識碼為提示依據之記事提醒系統設計與實作
+            </blockquote>
           </div>
         </div>
       </div>
@@ -489,35 +558,9 @@
     <!-- IN-SERVICE -->
 
     <!-- FOOTER -->
-    <footer id="footer">
-      <div class="inner">
-        <div class="flex">
-          <div>
-            <!-- <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5102.514245095546!2d120.67884830798728!3d24.118288666345826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693ce2ab580c49%3A0xb7210528d610abb3!2z5ZyL56uL5Lit6IiI5aSn5a2455CG5a246Zmi5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1601967340375!5m2!1szh-TW!2stw"
-              width="400"
-              height="300"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe> -->
-          </div>
-          <div class="copyright">
-            <address>理學大樓-720</address>
-            <a target="_blank" href="https://goo.gl/maps/8tAPo9fd1j92">Maps</a>
-            <a href="mailto:udiclab@email.nchu.edu.tw">Email</a>
-            <a href="tel:04-22840497#720">Phone</a>
-          </div>
-          <ul class="icons">
-            <li>
-              <a target="_blank" href="https://github.com/NCHU-NLU-Lab"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+    <footer id="section-footer">
+      <div class="content">
+        <p>Copyright © 2020 UDIC. All rights reserved.</p>
       </div>
     </footer>
     <!-- FOOTER -->

@@ -13,6 +13,7 @@ module.exports = (env, argv) => {
     entry: {
       index: [
         "@fortawesome/fontawesome-free/js/all.js",
+        "./src/assets/js/index.js",
         "./src/assets/css/index.css",
       ],
       querator: [
