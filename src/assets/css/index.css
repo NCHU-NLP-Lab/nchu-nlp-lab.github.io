@@ -15,21 +15,21 @@
 
   h1 {
     @apply text-white;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 100;
     line-height: 1.5;
   }
 
   h2 {
     @apply text-blue-700;
-    font-size: 2.75em;
+    font-size: 1.5em;
     font-weight: 100;
     line-height: 1.5;
   }
 
   h3 {
     @apply text-blue-700;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 300;
     line-height: 1.5;
   }
@@ -45,7 +45,6 @@
   h3,
   h4 {
     @apply text-blue-700 my-6;
-    /* margin-bottom: 4em; */
   }
 
   blockquote {
@@ -53,9 +52,7 @@
   }
 
   lottie-player {
-    @apply mx-auto;
-    width: 300px;
-    height: 300px;
+    @apply max-w-full max-h-full mx-auto;
   }
 
   section {
@@ -73,6 +70,7 @@
   }
 
   .content {
+    width: 90%;
     max-width: 75em;
     margin: 0 auto;
   }
@@ -108,16 +106,25 @@
   }
 
   #map {
-    width: 400px;
+    @apply max-w-full mx-auto;
+    /* width: 400px; */
     height: 400px;
   }
 
   #summary-container {
-    @apply grid grid-cols-3 gap-10;
+    @apply grid grid-cols-1 gap-10 w-full;
+  }
+
+  .summary-section-sm {
+    /* @apply w-4/5; */
+  }
+
+  .summary-section-lg {
+    /* @apply w-4/5; */
   }
 
   .member-container {
-    @apply grid grid-cols-4 gap-10;
+    @apply grid grid-cols-1 gap-10;
   }
 
   .member {
@@ -145,6 +152,17 @@
 
   /* 640px + */
   @screen sm {
+    #summary-container {
+      @apply grid-cols-2;
+    }
+
+    #map {
+      height: 100%;
+    }
+
+    .member-container {
+      @apply grid-cols-2;
+    }
   }
 
   /* 768px + */
@@ -161,15 +179,22 @@
     }
 
     #summary-container {
-      @apply grid grid-cols-2 gap-10;
+      @apply grid-cols-3;
+    }
+
+    .summary-section-lg {
+      @apply col-span-2;
     }
 
     .member-container {
-      @apply grid grid-cols-3 gap-10;
+      @apply grid-cols-3;
     }
   }
 
   /* 1280px + */
   @screen xl {
+    .member-container {
+      @apply grid-cols-4;
+    }
   }
 }

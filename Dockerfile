@@ -1,14 +1,16 @@
-FROM python:3.6-stretch
+FROM node:latest
 
-# Create app directory
-RUN mkdir -p /usr/src/app
+EXPOSE 5000
 WORKDIR /usr/src/app
 
-# Copy Python dependencies
-COPY requirements.txt /usr/src/app/
-RUN pip install -r /usr/src/app/requirements.txt
-
 # Copy source project
-COPY . /usr/src/app/
+COPY . /usr/src/app
 
-CMD python -m server --port 80 --static-dir ./src
+# Install Dependencies
+RUN npm install
+RUN npm install --global serve
+
+# Build Static Website
+RUN npm run build
+
+CMD serve dist

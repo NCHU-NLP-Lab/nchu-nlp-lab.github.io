@@ -6,11 +6,16 @@
 
 ```bash
 docker build --tag udic-website .
-docker run --name "udic-website" --publish "5000:5000" udic-website
+docker run \
+	--detach --rm \
+	--name="udic-website" \
+	--publish="5000:5000" \
+	udic-website
 ```
-## Development  
+## Development
 
 ```bash
 npm install
-npm run dev
+npm run dev:watch
 ```
+
