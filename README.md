@@ -5,12 +5,7 @@
 ## Install & Run
 
 ```bash
-docker build --tag udic-website .
-docker run \
-	--detach --rm \
-	--name="udic-website" \
-	--publish="5000:5000" \
-	udic-website
+docker-compose up --detach --build
 ```
 ## Development
 

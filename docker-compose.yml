@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  udic-website:
+    build: "."
+    container_name: "udic-website"
+    networks:
+      - "web_server_web-server-bridge"
+    restart: "always"
+
+networks:
+  web_server_web-server-bridge:
+    external: true
