@@ -69,6 +69,10 @@
     @apply text-white;
   }
 
+  article p {
+    @apply my-5;
+  }
+
   .content {
     width: 90%;
     max-width: 75em;
@@ -107,8 +111,8 @@
 
   #map {
     @apply max-w-full mx-auto;
-    /* width: 400px; */
-    height: 400px;
+    width: 400px;
+    height: 20em;
   }
 
   #summary-container {
@@ -154,10 +158,6 @@
   @screen sm {
     #summary-container {
       @apply grid-cols-2;
-    }
-
-    #map {
-      height: 100%;
     }
 
     .member-container {
