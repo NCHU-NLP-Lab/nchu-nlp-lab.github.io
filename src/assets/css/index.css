@@ -105,7 +105,7 @@
   }
 
   #banner {
-    @apply bg-fixed bg-top bg-no-repeat bg-cover text-center py-64;
+    @apply bg-scroll bg-top bg-no-repeat bg-cover text-center py-64;
     background-image: url("../img/banner.jpg");
   }
 
@@ -167,8 +167,8 @@
 
   /* 768px + */
   @screen md {
-    #banner {
-      @apply bg-scroll;
+    #section-service article {
+      @apply w-1/2;
     }
   }
 

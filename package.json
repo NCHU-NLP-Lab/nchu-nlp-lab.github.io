@@ -1,11 +1,11 @@
 {
   "name": "udic-website",
-  "version": "2.0.0",
+  "version": "2020.12.15",
   "description": "The main website of UDIC lab",
   "private": true,
   "scripts": {
-    "dev:watch": "webpack-dev-server --mode=development --config webpack.config.js",
-    "dev:build": "webpack --mode=development --config webpack.config.js",
+    "serve": "webpack-dev-server --mode=development --config webpack.config.js",
+    "build dev": "webpack --mode=development --config webpack.config.js",
     "build": "webpack --mode=production --config webpack.config.js"
   },
   "keywords": [],

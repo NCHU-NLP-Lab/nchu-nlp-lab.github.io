@@ -4,13 +4,13 @@
 
 ## Install & Run
 
-```bash
+```sh
 docker-compose up --detach --build
 ```
+
 ## Development
 
-```bash
+```sh
 npm install
-npm run dev:watch
+npm run serve
 ```
-
