@@ -5,6 +5,10 @@
 @import "tailwindcss/utilities";
 
 @layer components {
+  .text-GhostWhite{
+    color:#F8F8FF;
+  }
+
   body {
     color: #9a9a9a;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -107,6 +111,10 @@
   #banner {
     @apply bg-scroll bg-top bg-no-repeat bg-cover text-center py-64;
     background-image: url("../img/banner.jpg");
+  }
+
+  #banner a:hover{
+    text-decoration: underline;
   }
 
   #map {
