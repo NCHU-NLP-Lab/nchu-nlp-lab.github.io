@@ -5,6 +5,23 @@
 @import "tailwindcss/utilities";
 
 @layer components {
+
+  .icon-open-new{
+    filter: brightness(0) invert(1);
+    display: inline-block;
+    height: 24px;
+    margin-left: 3px
+  }
+
+  .btn-main{
+    color:white;
+    padding:12px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
+  }
+  .bg-main-blue{
+    background-color: rgba(8, 25, 45)
+  }
+  
   .text-GhostWhite{
     color:#F8F8FF;
   }
