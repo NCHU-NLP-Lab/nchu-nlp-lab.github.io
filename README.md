@@ -1,4 +1,4 @@
-# UDIC Website
+# NLP Lab Website
 
 實驗室的網站
 
