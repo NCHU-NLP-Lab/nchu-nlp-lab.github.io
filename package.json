@@ -1,12 +1,13 @@
 {
   "name": "nchu-nlp-website",
-  "version": "2021.04.19",
-  "description": "The main website of NCHU NLP lab",
+  "version": "2021.11.30",
+  "description": "The main website of NCHU NLP Lab",
   "private": true,
   "scripts": {
     "serve": "webpack serve --mode=development --config webpack.config.js",
     "build dev": "webpack --mode=development --config webpack.config.js",
-    "build": "webpack --mode=production --config webpack.config.js"
+    "build": "webpack --mode=production --config webpack.config.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "NCHU NLP Lab",
@@ -19,6 +20,9 @@
     },
     {
       "name": "Tomy Hsieh (@tomy0000000)"
+    },
+    {
+      "name": "YuTang Shih (@ryanytshih)"
     }
   ],
   "license": "MIT",
@@ -31,6 +35,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@lottiefiles/lottie-player": "^1.0.3",
     "aos": "^2.3.4",
+    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "postcss": "^8.2.10",
     "postcss-loader": "^5.2.0",
